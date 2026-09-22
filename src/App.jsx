@@ -307,6 +307,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Đặt a=2k,b=5k: (2k+5k)/(2k-5k)=7k/(-3k)=-7/3."
+      },
+      {
+        "prompt": "Tính: 1/(1×2)+1/(2×3)+1/(3×4)+...+1/(9×10)",
+        "options": [
+          "9/10",
+          "1/10",
+          "1",
+          "9/100"
+        ],
+        "correct": 0,
+        "explain": "Mỗi số hạng viết thành hiệu 1/n-1/(n+1), triệt tiêu dây chuyền: 1-1/10=9/10."
+      },
+      {
+        "prompt": "Hai số hữu tỉ a, b thỏa a+b=1, a−b=1/3. Tính a×b.",
+        "options": [
+          "2/9",
+          "1/9",
+          "1/3",
+          "4/9"
+        ],
+        "correct": 0,
+        "explain": "a=(1+1/3)/2=2/3, b=(1-1/3)/2=1/3. a×b=2/3×1/3=2/9."
+      },
+      {
+        "prompt": "Tính: (1+1/2)(1+1/3)(1+1/4)",
+        "options": [
+          "5/2",
+          "2/5",
+          "5/4",
+          "3/2"
+        ],
+        "correct": 0,
+        "explain": "(3/2)(4/3)(5/4)=5/2 (rút gọn dây chuyền)."
+      },
+      {
+        "prompt": "Ba số x, y, z tỉ lệ 1:2:3, tổng x+y+z=1/6. Tìm y.",
+        "options": [
+          "1/18",
+          "1/12",
+          "1/9",
+          "1/36"
+        ],
+        "correct": 0,
+        "explain": "Tổng phần=6, mỗi phần=1/36. y=2×1/36=1/18."
+      },
+      {
+        "prompt": "Tính nhanh: 99×101−100²",
+        "options": [
+          "-1",
+          "1",
+          "0",
+          "-100"
+        ],
+        "correct": 0,
+        "explain": "(100-1)(100+1)-100²=100²-1-100²=-1."
       }
     ]
   },
@@ -562,6 +617,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "3x-1=2x+5→x=6. Hoặc -(3x-1)=2x+5→x=-4/5. Cả 2 đều thỏa điều kiện 2x+5≥0."
+      },
+      {
+        "prompt": "Tìm giá trị nhỏ nhất của biểu thức |x−1|+|x−3|+|x−5|.",
+        "options": [
+          "4",
+          "2",
+          "6",
+          "0"
+        ],
+        "correct": 0,
+        "explain": "GTNN đạt tại x=3 (điểm giữa): |3-1|+|3-3|+|3-5|=2+0+2=4."
+      },
+      {
+        "prompt": "Giải phương trình: |x−2|+|x+2|=6",
+        "options": [
+          "x=3 hoặc x=-3",
+          "Chỉ x=3",
+          "Chỉ x=-3",
+          "Vô nghiệm"
+        ],
+        "correct": 0,
+        "explain": "Với x≥2: 2x=6→x=3. Với x≤-2: -2x=6→x=-3. Giữa -2 và 2, tổng luôn=4≠6."
+      },
+      {
+        "prompt": "Giải phương trình: |x−1|=2|x+2|",
+        "options": [
+          "x=-5 hoặc x=-1",
+          "Chỉ x=-5",
+          "Chỉ x=-1",
+          "Vô nghiệm"
+        ],
+        "correct": 0,
+        "explain": "TH1: x-1=2(x+2)→x=-5. TH2: x-1=-2(x+2)→x=-1. Cả 2 đều thỏa."
+      },
+      {
+        "prompt": "Có bao nhiêu số nguyên x thỏa |x−3|<4?",
+        "options": [
+          "7",
+          "8",
+          "6",
+          "9"
+        ],
+        "correct": 0,
+        "explain": "-1<x<7, các số nguyên: 0,1,2,3,4,5,6 — có 7 số."
+      },
+      {
+        "prompt": "Tìm giá trị lớn nhất của biểu thức 5−|x+2|.",
+        "options": [
+          "5",
+          "-5",
+          "0",
+          "2"
+        ],
+        "correct": 0,
+        "explain": "GTLN đạt khi |x+2|=0 (x=-2): 5-0=5."
       }
     ]
   },
@@ -817,6 +927,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "n+3=10 → n=7."
+      },
+      {
+        "prompt": "Tìm x biết: 2^(x+1)+2^x=24",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "5"
+        ],
+        "correct": 0,
+        "explain": "2ˣ(2+1)=24 → 2ˣ=8 → x=3."
+      },
+      {
+        "prompt": "So sánh 5³⁰ và 3⁵⁰.",
+        "options": [
+          "5³⁰ < 3⁵⁰",
+          "5³⁰ > 3⁵⁰",
+          "Bằng nhau",
+          "Không so sánh được"
+        ],
+        "correct": 0,
+        "explain": "5³⁰=(5³)¹⁰=125¹⁰, 3⁵⁰=(3⁵)¹⁰=243¹⁰. Vì 125<243 nên 5³⁰<3⁵⁰."
+      },
+      {
+        "prompt": "Tính: (2¹⁰+2¹⁰)/2¹⁰",
+        "options": [
+          "2",
+          "1",
+          "4",
+          "2¹⁰"
+        ],
+        "correct": 0,
+        "explain": "2×2¹⁰/2¹⁰=2."
+      },
+      {
+        "prompt": "Tìm số tự nhiên n nhỏ nhất để 3ⁿ>1000.",
+        "options": [
+          "7",
+          "6",
+          "8",
+          "5"
+        ],
+        "correct": 0,
+        "explain": "3⁶=729<1000, 3⁷=2187>1000. Vậy n=7."
+      },
+      {
+        "prompt": "Rút gọn: (2⁵×3³)/(2³×3⁵)",
+        "options": [
+          "4/9",
+          "9/4",
+          "2/3",
+          "8/15"
+        ],
+        "correct": 0,
+        "explain": "2⁵⁻³×3³⁻⁵=2²×3⁻²=4/9."
       }
     ]
   },
@@ -1072,6 +1237,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "k=2/5. d(k+1)=21→d(7/5)=21→d=15, c=21-15=6."
+      },
+      {
+        "prompt": "Cho a/b=c/d (b≠d). Khẳng định (a−c)/(b−d)=a/b đúng hay sai?",
+        "options": [
+          "Đúng",
+          "Sai",
+          "Chỉ đúng khi a=c",
+          "Chỉ đúng khi b=d"
+        ],
+        "correct": 0,
+        "explain": "Theo tính chất dãy tỉ số bằng nhau: a/b=c/d=(a-c)/(b-d)."
+      },
+      {
+        "prompt": "Tìm x, y biết 2x=3y và x−y=4.",
+        "options": [
+          "x=12, y=8",
+          "x=8, y=12",
+          "x=6, y=4",
+          "x=4, y=2"
+        ],
+        "correct": 0,
+        "explain": "2x=3y → x:y=3:2, đặt x=3k,y=2k. x-y=k=4 → x=12, y=8."
+      },
+      {
+        "prompt": "Cho x:y:z=2:3:4 và x+y−z=1. Tìm x.",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct": 0,
+        "explain": "Đặt x=2k,y=3k,z=4k: 2k+3k-4k=k=1 → x=2."
+      },
+      {
+        "prompt": "Ba số a, b, c tỉ lệ nghịch với 2, 3, 4. Biết a=12. Tìm b.",
+        "options": [
+          "8",
+          "6",
+          "9",
+          "16"
+        ],
+        "correct": 0,
+        "explain": "Tỉ lệ nghịch 2,3,4 = tỉ lệ thuận 6:4:3 (quy đồng 1/2,1/3,1/4). a ứng phần 6 → 1 phần=2. b ứng phần 4 → b=8."
+      },
+      {
+        "prompt": "Tìm x biết: (2x−1)/3=(x+2)/5",
+        "options": [
+          "11/7",
+          "7/11",
+          "1",
+          "2"
+        ],
+        "correct": 0,
+        "explain": "5(2x-1)=3(x+2) → 10x-5=3x+6 → 7x=11 → x=11/7."
       }
     ]
   },
@@ -1327,6 +1547,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "k=12/4=3. y=3×25=75."
+      },
+      {
+        "prompt": "y tỉ lệ thuận x (hệ số 3), z tỉ lệ nghịch y (tích=36). Khi x=2, tìm z.",
+        "options": [
+          "6",
+          "12",
+          "18",
+          "3"
+        ],
+        "correct": 0,
+        "explain": "y=3×2=6. z=36/6=6."
+      },
+      {
+        "prompt": "Đội 12 người dự kiến làm xong việc trong 10 ngày. Muốn xong sớm hơn 2 ngày (còn 8 ngày) cần thêm bao nhiêu người?",
+        "options": [
+          "3 người",
+          "2 người",
+          "4 người",
+          "5 người"
+        ],
+        "correct": 0,
+        "explain": "Tổng công=120. Với 8 ngày cần 120/8=15 người. Thêm 15-12=3 người."
+      },
+      {
+        "prompt": "y tỉ lệ thuận x, biết x=3 thì y=−6. Tìm x khi y=10.",
+        "options": [
+          "-5",
+          "5",
+          "-15",
+          "15"
+        ],
+        "correct": 0,
+        "explain": "k=-6/3=-2. x=10/(-2)=-5."
+      },
+      {
+        "prompt": "15 công nhân xây xong tường trong 8 ngày, mỗi ngày 6 giờ. Hỏi 10 công nhân làm 12 giờ/ngày thì xong trong bao nhiêu ngày?",
+        "options": [
+          "6 ngày",
+          "8 ngày",
+          "4 ngày",
+          "10 ngày"
+        ],
+        "correct": 0,
+        "explain": "Tổng giờ-công=15×8×6=720. Mỗi ngày mới=10×12=120 giờ-công. Số ngày=720/120=6."
+      },
+      {
+        "prompt": "x tỉ lệ thuận y², biết x=8 khi y=2. Tìm x khi y=5.",
+        "options": [
+          "50",
+          "20",
+          "40",
+          "100"
+        ],
+        "correct": 0,
+        "explain": "k=8/4=2. x=2×25=50."
       }
     ]
   },
@@ -1582,6 +1857,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "x²-4x+7=(x-2)²+3, giá trị nhỏ nhất là 3."
+      },
+      {
+        "prompt": "Đa thức P(x)=x²+bx+c có 2 nghiệm 2 và 5. Tính b+c.",
+        "options": [
+          "3",
+          "-3",
+          "17",
+          "-17"
+        ],
+        "correct": 0,
+        "explain": "P(x)=(x-2)(x-5)=x²-7x+10. b=-7, c=10. b+c=3."
+      },
+      {
+        "prompt": "Đa thức Q(x)=2x²−5x+2 có nghiệm là?",
+        "options": [
+          "x=1/2 hoặc x=2",
+          "Chỉ x=2",
+          "Chỉ x=1/2",
+          "Vô nghiệm"
+        ],
+        "correct": 0,
+        "explain": "2x²-5x+2=(2x-1)(x-2)=0 → x=1/2 hoặc x=2."
+      },
+      {
+        "prompt": "Đa thức nào sau đây thỏa P(x)=P(−x) với mọi x?",
+        "options": [
+          "x²+1",
+          "x+1",
+          "x³",
+          "2x"
+        ],
+        "correct": 0,
+        "explain": "Thay -x vào x²+1 được x²+1, không đổi."
+      },
+      {
+        "prompt": "Tìm m để đa thức x²−4x+m là bình phương của một nhị thức.",
+        "options": [
+          "4",
+          "2",
+          "-4",
+          "0"
+        ],
+        "correct": 0,
+        "explain": "x²-4x+4=(x-2)², vậy m=4."
+      },
+      {
+        "prompt": "Cho P(x)=ax²+bx+c, biết P(0)=1, P(1)=4, P(−1)=0. Tính a.",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "correct": 0,
+        "explain": "c=1. a+b+c=4→a+b=3. a-b+c=0→a-b=-1. Cộng: 2a=2→a=1."
       }
     ]
   },
@@ -1837,6 +2167,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Bình phương: 3+5+2√15=8+2√15≈15,75<16=4². Vậy √3+√5<4."
+      },
+      {
+        "prompt": "Tính: √50−√18+√8",
+        "options": [
+          "4√2",
+          "2√2",
+          "6√2",
+          "10√2"
+        ],
+        "correct": 0,
+        "explain": "√50=5√2, √18=3√2, √8=2√2. Tổng=5√2-3√2+2√2=4√2."
+      },
+      {
+        "prompt": "So sánh √2+√3+√5 và 6.",
+        "options": [
+          "√2+√3+√5 < 6",
+          "> 6",
+          "= 6",
+          "Không so sánh được"
+        ],
+        "correct": 0,
+        "explain": "√2≈1,41, √3≈1,73, √5≈2,24, tổng≈5,38<6."
+      },
+      {
+        "prompt": "Tìm x biết: √(x−1)=3",
+        "options": [
+          "10",
+          "8",
+          "9",
+          "4"
+        ],
+        "correct": 0,
+        "explain": "x-1=9 → x=10."
+      },
+      {
+        "prompt": "Rút gọn: √(7−4√3)",
+        "options": [
+          "2-√3",
+          "√3-2",
+          "2+√3",
+          "√7-4√3"
+        ],
+        "correct": 0,
+        "explain": "7-4√3=4-4√3+3=(2-√3)². Vì 2>√3 nên căn là 2-√3."
+      },
+      {
+        "prompt": "Tính: (√3+1)²−(√3−1)²",
+        "options": [
+          "4√3",
+          "4",
+          "2√3",
+          "8"
+        ],
+        "correct": 0,
+        "explain": "Dùng (a+b)²-(a-b)²=4ab với a=√3,b=1: 4√3."
       }
     ]
   },
@@ -2092,6 +2477,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Trong 5 viên không vàng (3 xanh+2 đỏ), xác suất đỏ=2/5."
+      },
+      {
+        "prompt": "Gieo 2 xúc xắc, tính xác suất tích 2 số chấm là số lẻ.",
+        "options": [
+          "1/4",
+          "1/2",
+          "1/6",
+          "1/3"
+        ],
+        "correct": 0,
+        "explain": "Tích lẻ khi cả 2 mặt đều lẻ: 3×3=9 cách trong 36. 9/36=1/4."
+      },
+      {
+        "prompt": "Hộp 10 thẻ đánh số 1-10, rút 2 thẻ không hoàn lại. Xác suất cả 2 số đều chẵn.",
+        "options": [
+          "2/9",
+          "1/5",
+          "1/2",
+          "5/9"
+        ],
+        "correct": 0,
+        "explain": "5 số chẵn: C(5,2)/C(10,2)=10/45=2/9."
+      },
+      {
+        "prompt": "Lớp 40 học sinh, 25 thích Toán, 20 thích Lý, có 5 bạn không thích môn nào. Hỏi bao nhiêu bạn thích cả 2 môn?",
+        "options": [
+          "10",
+          "15",
+          "5",
+          "20"
+        ],
+        "correct": 0,
+        "explain": "Thích ít nhất 1 môn=40-5=35=25+20-x → x=10."
+      },
+      {
+        "prompt": "Xác suất thi đỗ môn A là 0,8; môn B là 0,7 (độc lập). Xác suất đỗ ít nhất 1 môn là?",
+        "options": [
+          "0,94",
+          "0,5",
+          "0,56",
+          "0,86"
+        ],
+        "correct": 0,
+        "explain": "P(đỗ ít nhất 1)=1-P(trượt cả 2)=1-0,2×0,3=0,94."
+      },
+      {
+        "prompt": "Ba bạn xếp hàng ngẫu nhiên. Xác suất 2 bạn cụ thể A, B đứng cạnh nhau là?",
+        "options": [
+          "2/3",
+          "1/3",
+          "1/2",
+          "1/6"
+        ],
+        "correct": 0,
+        "explain": "Coi AB là 1 khối: 2×2!=4 cách trong 3!=6 cách xếp. 4/6=2/3."
       }
     ]
   },
@@ -2347,6 +2787,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Số cặp trong 4 đường thẳng: C(4,2)=6."
+      },
+      {
+        "prompt": "Hai đường thẳng a, b song song. Đường thẳng c cắt a tạo góc 50°. Góc giữa c và b bằng?",
+        "options": [
+          "50°",
+          "130°",
+          "90°",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "Vì a//b, góc c tạo với a và b bằng nhau ở vị trí đồng vị."
+      },
+      {
+        "prompt": "Ba đường thẳng đồng quy tại O tạo 6 góc. Tổng tất cả 6 góc đó bằng?",
+        "options": [
+          "360°",
+          "240°",
+          "180°",
+          "720°"
+        ],
+        "correct": 0,
+        "explain": "Tổng các góc quanh 1 điểm luôn bằng 360°."
+      },
+      {
+        "prompt": "Hai đường thẳng song song cách nhau 5cm. Điểm M nằm giữa, cách đường thứ nhất 3cm. M cách đường thứ hai bao nhiêu?",
+        "options": [
+          "2cm",
+          "8cm",
+          "5cm",
+          "3cm"
+        ],
+        "correct": 0,
+        "explain": "5-3=2cm."
+      },
+      {
+        "prompt": "Góc xOy=80°, Ot là phân giác. Oz là tia đối của Ot. Tính góc yOz.",
+        "options": [
+          "140°",
+          "100°",
+          "220°",
+          "40°"
+        ],
+        "correct": 0,
+        "explain": "xOt=tOy=40°. Oz đối Ot nên góc yOz=180°-40°=140°."
+      },
+      {
+        "prompt": "Hình thang có 2 cạnh đáy song song, 1 góc trong =70°. Góc kề cạnh bên (cùng đáy) bằng?",
+        "options": [
+          "110°",
+          "70°",
+          "90°",
+          "180°"
+        ],
+        "correct": 0,
+        "explain": "Góc trong cùng phía bù nhau: 180°-70°=110°."
       }
     ]
   },
@@ -2602,6 +3097,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Tổng phần=6, mỗi phần=30°, góc C=90° → tam giác vuông."
+      },
+      {
+        "prompt": "Tam giác ABC vuông tại A, đường cao AH, góc B=35°. Tính góc HAC.",
+        "options": [
+          "35°",
+          "55°",
+          "45°",
+          "60°"
+        ],
+        "correct": 0,
+        "explain": "Góc C=90°-35°=55°. Vì AH⊥BC nên góc HAC=90°-55°=35°."
+      },
+      {
+        "prompt": "Tam giác ABC, D trên BC, biết góc ADB=110°, góc B=40°. Tính góc BAD.",
+        "options": [
+          "30°",
+          "70°",
+          "50°",
+          "40°"
+        ],
+        "correct": 0,
+        "explain": "Trong tam giác ABD: góc BAD=180°-110°-40°=30°."
+      },
+      {
+        "prompt": "Tam giác ABC có phân giác AD, biết góc ADB=75°, góc B=45°. Tính góc A.",
+        "options": [
+          "120°",
+          "60°",
+          "90°",
+          "30°"
+        ],
+        "correct": 0,
+        "explain": "Góc BAD=180°-75°-45°=60°. Vì AD phân giác nên góc A=2×60°=120°."
+      },
+      {
+        "prompt": "Tam giác cân ABC tại A, góc B=50°. D trên tia đối BA sao cho BD=BC. Tính góc BDC.",
+        "options": [
+          "25°",
+          "50°",
+          "65°",
+          "40°"
+        ],
+        "correct": 0,
+        "explain": "Góc DBC=180°-50°=130° (kề bù). Tam giác BDC cân tại B: góc BDC=(180°-130°)/2=25°."
+      },
+      {
+        "prompt": "Tam giác ABC có góc A=80°. Phân giác góc B và góc C cắt nhau tại I. Tính góc BIC.",
+        "options": [
+          "130°",
+          "100°",
+          "140°",
+          "50°"
+        ],
+        "correct": 0,
+        "explain": "Công thức: góc BIC=90°+góc A/2=90°+40°=130°."
       }
     ]
   },
@@ -2857,6 +3407,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "3 cặp cạnh tương ứng bằng nhau: AB=AC, BD=CD, AD chung."
+      },
+      {
+        "prompt": "Tam giác ABC, M trung điểm BC. Trên tia đối MA lấy D sao cho MD=MA. Hai tam giác nào bằng nhau để suy ra AB=DC?",
+        "options": [
+          "AMB và DMC",
+          "AMC và DMB",
+          "ABM và ACM",
+          "Không tam giác nào"
+        ],
+        "correct": 0,
+        "explain": "AM=DM, BM=CM, góc AMB=góc DMC (đối đỉnh) → 2 tam giác bằng nhau (c.g.c)."
+      },
+      {
+        "prompt": "Góc xOy có M trên phân giác. Kẻ MA⊥Ox, MB⊥Oy. Nếu OA=3cm thì OB bằng?",
+        "options": [
+          "3cm",
+          "6cm",
+          "1,5cm",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "2 tam giác vuông OAM và OBM bằng nhau (cạnh huyền-góc nhọn), nên OA=OB."
+      },
+      {
+        "prompt": "Hai tam giác ABC=DEF, biết diện tích ABC=36cm². Diện tích DEF bằng?",
+        "options": [
+          "36cm²",
+          "18cm²",
+          "72cm²",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "2 tam giác bằng nhau thì có diện tích bằng nhau."
+      },
+      {
+        "prompt": "Hai tam giác cân có góc ở đỉnh bằng nhau và cạnh bên bằng nhau. Kết luận về 2 tam giác?",
+        "options": [
+          "Bằng nhau (c.g.c)",
+          "Chỉ đồng dạng",
+          "Không đủ dữ kiện",
+          "Không liên quan"
+        ],
+        "correct": 0,
+        "explain": "2 cạnh bên và góc xen giữa (góc đỉnh) tương ứng bằng nhau."
+      },
+      {
+        "prompt": "Tam giác ABC, E trung điểm AC, F trung điểm AB. Nếu BE=CF thì tam giác ABC là tam giác gì?",
+        "options": [
+          "Cân",
+          "Đều",
+          "Vuông",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "Tính chất: nếu 2 đường trung tuyến bằng nhau thì tam giác cân."
       }
     ]
   },
@@ -3112,6 +3717,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "Công thức diện tích tam giác đều cạnh a."
+      },
+      {
+        "prompt": "Tam giác cân ABC (AB=AC), H trung điểm BC. Biết AB=13cm, BC=10cm. Tính AH.",
+        "options": [
+          "12cm",
+          "8cm",
+          "15cm",
+          "18cm"
+        ],
+        "correct": 0,
+        "explain": "BH=5cm. AH=√(13²-5²)=√144=12cm."
+      },
+      {
+        "prompt": "Tam giác đều ABC cạnh 6cm có chiều cao 3√3cm. Theo định lý Viviani, tổng khoảng cách từ 1 điểm bất kỳ trong tam giác đến 3 cạnh bằng?",
+        "options": [
+          "3√3cm",
+          "6√3cm",
+          "9cm",
+          "3cm"
+        ],
+        "correct": 0,
+        "explain": "Định lý Viviani: tổng khoảng cách từ điểm trong tam giác đều đến 3 cạnh luôn bằng chiều cao."
+      },
+      {
+        "prompt": "Tam giác cân tại A có chu vi 32cm, cạnh đáy bằng 2/3 cạnh bên. Tính cạnh bên.",
+        "options": [
+          "12cm",
+          "8cm",
+          "16cm",
+          "10cm"
+        ],
+        "correct": 0,
+        "explain": "Gọi bên=x, đáy=2x/3: 2x+2x/3=32 → 8x/3=32 → x=12cm."
+      },
+      {
+        "prompt": "Tam giác đều ABC, D, E, F lần lượt là trung điểm BC, CA, AB. Tam giác DEF là hình gì?",
+        "options": [
+          "Tam giác đều, cạnh bằng 1/2 cạnh ABC",
+          "Tam giác đều, cạnh bằng 1/3",
+          "Tam giác vuông",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "DEF tạo bởi 3 đường trung bình, mỗi cạnh bằng nửa cạnh tương ứng của ABC."
+      },
+      {
+        "prompt": "Tam giác cân tại A, góc A=2×góc B. Tính góc A.",
+        "options": [
+          "90°",
+          "45°",
+          "60°",
+          "120°"
+        ],
+        "correct": 0,
+        "explain": "Đặt góc B=góc C=x, góc A=2x: 4x=180°→x=45°, góc A=90°."
       }
     ]
   },
@@ -3367,6 +4027,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "AB=√(3²+4²)=√25=5."
+      },
+      {
+        "prompt": "Tam giác vuông tại A, trung tuyến AM=5cm ứng cạnh huyền, đường cao AH=4,8cm. Tính diện tích tam giác.",
+        "options": [
+          "24cm²",
+          "48cm²",
+          "12cm²",
+          "30cm²"
+        ],
+        "correct": 0,
+        "explain": "BC=2×AM=10cm. Diện tích=½×10×4,8=24cm²."
+      },
+      {
+        "prompt": "Một tam giác vuông có 3 cạnh 3k, 4k, 5k. Diện tích tam giác=24cm². Tìm k.",
+        "options": [
+          "2",
+          "4",
+          "1",
+          "3"
+        ],
+        "correct": 0,
+        "explain": "Diện tích=½×3k×4k=6k²=24→k²=4→k=2."
+      },
+      {
+        "prompt": "Thang dài 13m, ban đầu chân cách tường 12m (cao 5m). Đưa chân lại gần còn cách 5m. Độ cao đỉnh thang tăng thêm bao nhiêu?",
+        "options": [
+          "7m",
+          "12m",
+          "5m",
+          "17m"
+        ],
+        "correct": 0,
+        "explain": "Cao mới=√(169-25)=12m. Tăng thêm=12-5=7m."
+      },
+      {
+        "prompt": "Tam giác vuông có 2 cạnh góc vuông x và x+7, cạnh huyền x+8. Tìm x.",
+        "options": [
+          "5",
+          "12",
+          "13",
+          "-3"
+        ],
+        "correct": 0,
+        "explain": "x²+(x+7)²=(x+8)² → x²-2x-15=0 → (x-5)(x+3)=0 → x=5 (loại -3)."
+      },
+      {
+        "prompt": "Khu đất hình chữ nhật có chiều dài 24m, đường chéo 25m. Tính diện tích.",
+        "options": [
+          "168m²",
+          "175m²",
+          "600m²",
+          "49m²"
+        ],
+        "correct": 0,
+        "explain": "Chiều rộng=√(625-576)=7m. Diện tích=24×7=168m²."
       }
     ]
   },
@@ -3622,6 +4337,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "x+2<x+(x+1) → x>1, số nguyên dương nhỏ nhất là 2."
+      },
+      {
+        "prompt": "Tam giác ABC có AB=AC=4cm, góc A=100°. So sánh BC với AB.",
+        "options": [
+          "BC > AB",
+          "BC < AB",
+          "BC = AB",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "Góc A lớn nhất (100°>40° mỗi góc đáy), cạnh đối diện BC lớn nhất."
+      },
+      {
+        "prompt": "Tam giác ABC có AB=3, BC=4, CA=6. Sắp xếp các góc theo thứ tự tăng dần.",
+        "options": [
+          "Góc C < góc A < góc B",
+          "Góc A < góc B < góc C",
+          "Góc B < góc C < góc A",
+          "Góc C < góc B < góc A"
+        ],
+        "correct": 0,
+        "explain": "Cạnh nhỏ nhất AB(3) đối diện góc C nhỏ nhất; cạnh lớn nhất CA(6) đối diện góc B lớn nhất."
+      },
+      {
+        "prompt": "Ba cạnh của một tam giác là các số nguyên liên tiếp, chu vi=18cm. Tìm cạnh lớn nhất.",
+        "options": [
+          "7cm",
+          "6cm",
+          "5cm",
+          "8cm"
+        ],
+        "correct": 0,
+        "explain": "x+(x+1)+(x+2)=18 → x=5. Cạnh lớn nhất=7cm."
+      },
+      {
+        "prompt": "Tam giác ABC vuông tại A. So sánh AB+AC với BC.",
+        "options": [
+          "AB+AC > BC",
+          "AB+AC < BC",
+          "Bằng nhau",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "Theo bất đẳng thức tam giác, tổng 2 cạnh luôn lớn hơn cạnh còn lại."
+      },
+      {
+        "prompt": "Tam giác cân tại A có góc A tù. So sánh cạnh đáy BC với cạnh bên AB.",
+        "options": [
+          "BC > AB",
+          "BC < AB",
+          "BC = AB",
+          "Không xác định"
+        ],
+        "correct": 0,
+        "explain": "Góc A tù là góc lớn nhất, cạnh đối diện BC lớn nhất."
       }
     ]
   },
@@ -3877,6 +4647,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "3 tam giác AGB, BGC, CGA có diện tích bằng nhau, mỗi phần=48/3=16cm²."
+      },
+      {
+        "prompt": "Tam giác ABC có trọng tâm G, diện tích tam giác GBC=20cm². Tính diện tích ABC.",
+        "options": [
+          "60cm²",
+          "20cm²",
+          "40cm²",
+          "30cm²"
+        ],
+        "correct": 0,
+        "explain": "GBC=1/3 diện tích ABC → ABC=60cm²."
+      },
+      {
+        "prompt": "Tam giác vuông tại A, AB=6, AC=8. Khoảng cách từ trực tâm đến đỉnh A bằng?",
+        "options": [
+          "0cm",
+          "5cm",
+          "10cm",
+          "6cm"
+        ],
+        "correct": 0,
+        "explain": "Trực tâm tam giác vuông trùng đỉnh góc vuông, nên khoảng cách bằng 0."
+      },
+      {
+        "prompt": "Tam giác đều cạnh 12cm có đường cao 6√3cm. Tính bán kính đường tròn ngoại tiếp.",
+        "options": [
+          "4√3cm",
+          "2√3cm",
+          "6√3cm",
+          "3√3cm"
+        ],
+        "correct": 0,
+        "explain": "R=2/3×đường cao=2/3×6√3=4√3cm."
+      },
+      {
+        "prompt": "Tam giác ABC, trung tuyến AD, BE, CF cắt nhau tại G. Biết BG=8cm. Tính BE.",
+        "options": [
+          "12cm",
+          "4cm",
+          "16cm",
+          "24cm"
+        ],
+        "correct": 0,
+        "explain": "BG=2/3 BE → BE=8×3/2=12cm."
+      },
+      {
+        "prompt": "Tam giác cân tại A với góc A=120° (góc tù). Trực tâm H nằm ở vị trí nào?",
+        "options": [
+          "Nằm ngoài tam giác",
+          "Nằm trong tam giác",
+          "Trùng đỉnh A",
+          "Nằm trên cạnh BC"
+        ],
+        "correct": 0,
+        "explain": "Khi tam giác có góc tù, trực tâm luôn nằm ngoài tam giác."
       }
     ]
   },
@@ -4132,6 +4957,61 @@ const CHUYEN_DE =
         ],
         "correct": 0,
         "explain": "(6/2)³=3³=27 khối."
+      },
+      {
+        "prompt": "Khối gỗ hình hộp 4×5×6cm được sơn ngoài rồi cắt thành khối 1cm. Có bao nhiêu khối có đúng 1 mặt được sơn?",
+        "options": [
+          "52",
+          "26",
+          "48",
+          "60"
+        ],
+        "correct": 0,
+        "explain": "Công thức: 2×[(4-2)(5-2)+(4-2)(6-2)+(5-2)(6-2)]=2×[6+8+12]=52."
+      },
+      {
+        "prompt": "Hai hình hộp chữ nhật đồng dạng có tỉ số đồng dạng 1:2. Tỉ số thể tích là?",
+        "options": [
+          "1:8",
+          "1:2",
+          "1:4",
+          "1:6"
+        ],
+        "correct": 0,
+        "explain": "Tỉ số thể tích bằng lập phương tỉ số cạnh: 1³:2³=1:8."
+      },
+      {
+        "prompt": "Hình lập phương cạnh a bị cắt 1 góc bởi mặt phẳng qua 3 trung điểm của 3 cạnh chung đỉnh. Phần bị cắt chiếm tỉ lệ bao nhiêu thể tích ban đầu?",
+        "options": [
+          "1/48",
+          "1/8",
+          "1/24",
+          "1/6"
+        ],
+        "correct": 0,
+        "explain": "Phần cắt là tứ diện vuông 3 cạnh a/2: V=(1/6)(a/2)³=a³/48, tỉ lệ so với a³ là 1/48."
+      },
+      {
+        "prompt": "Bể nước hình lập phương cạnh 2m đang đầy nước. Múc ra để mực nước còn cao 1,5m. Tính thể tích nước đã múc (lít).",
+        "options": [
+          "2000 lít",
+          "1000 lít",
+          "3000 lít",
+          "4000 lít"
+        ],
+        "correct": 0,
+        "explain": "Diện tích đáy=4m². Múc ra=4×0,5=2m³=2000 lít."
+      },
+      {
+        "prompt": "Hình hộp chữ nhật có thể tích 180cm³, chiều cao 5cm, đáy là hình vuông. Tính cạnh đáy.",
+        "options": [
+          "6cm",
+          "36cm",
+          "4cm",
+          "8cm"
+        ],
+        "correct": 0,
+        "explain": "Diện tích đáy=180/5=36cm². Cạnh=√36=6cm."
       }
     ]
   }
